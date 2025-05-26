@@ -1,0 +1,14 @@
+# macOS の不要ファイル
+.DS_Store
+
+
+# ビルド生成物（汎用）
+*.o
+*.a
+*.so
+*.out
+*.exe
+
+# その他
+HelloWorld
+makefile
