@@ -5,8 +5,7 @@
 AtCoder では [mizuno_masaki](https://atcoder.jp/users/mizuno_masaki) というユーザ名で参加しています。  
 コンテスト参加履歴、レーティング、提出コードなどは上記リンクから確認できます。
 
-一部のコードを実行する際には、[ac-library](https://github.com/atcoder/ac-library) を  
-`atcoder` ディレクトリに配置する必要がある場合があります。
+一部のコードを実行する際には、[ac-library](https://github.com/atcoder/ac-library) を `atcoder` ディレクトリに配置する必要がある場合があります。
 
 ---
 
