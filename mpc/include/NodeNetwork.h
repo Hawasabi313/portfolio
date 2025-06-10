@@ -2,4 +2,4 @@
 #include <set>
 #include <vector>
 
-#include "NetworkConfiguration.h"
+#include "NodeConfiguration.h"
