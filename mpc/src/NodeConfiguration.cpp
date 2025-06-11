@@ -60,8 +60,28 @@ int NodeConfiguration::getPeerPort(int id){
 void NodeConfiguration::loadConfig(std::string configFile){
     std::ifstream ifs(configFile);
 
-    std::string line;
+    std::string line, tk;
+    std::vector<std::string> tokens;
+    std::stringstream stream;
     while(getline(ifs, line)){
-        
+        tokens.clear();
+        stream.str("");
+        stream << line;
+        while(getline(stream, tk, ',')){
+            tokens.emplace_back(tk);
+        }
+
+        if(id == std::stoi(tokens[0])){
+            ip = tokens[1];
+            port = std::stoi(tokens[2]);
+        } else {
+            peerID.emplace_back(std::stoi(tokens[0]));
+            peerIP.emplace_back(tokens[1]);
+            peerPort.emplace_back(std::stoi(tokens[2]));
+        }
     }
+
+    ifs.close();
 }
+
+NodeConfiguration::~NodeConfiguration(){}
